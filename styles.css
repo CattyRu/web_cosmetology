@@ -1,0 +1,159 @@
+:root {
+  --color_1: #eee;
+  --color_2: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: var(--color_2);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  border-bottom: solid 1px #aaa;
+  background-color: var(--color_1);
+}
+
+nav a {
+  display: inline-block;
+  min-width: 9rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: solid 1px #aaa;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: transparent;
+}
+
+main {
+  padding: 0.5rem;
+  background-color: var(--color_1);
+  margin: 0.5rem;
+}
+
+.day_navigator {
+  padding: 0.2rem;
+
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+
+.customers_viewport {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.btn_add {
+  width: 70%;
+  max-width: 15rem;
+}
+
+.customers_list {
+  width: 100%;
+}
+
+/* .customer {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 0;
+  height: 100px;
+} */
+
+.customer .base_info,
+.customer .edit_info {
+  background-color: var(--color_2);
+  margin: 0.3rem 0;
+  width: 100%;
+}
+
+.customer .base_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customer .base_info .time {
+  align-self: center;
+  margin: 0px 3px;
+}
+
+.customer .base_info .btns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.customer .base_info .btn_succes,
+.customer .base_info .btn_cansel,
+.customer .base_info .btn_edit {
+  width: 10px;
+  height: 10px;
+  font-size: 0;
+  margin: auto 0;
+}
+
+
+
+.customer .edit_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customer .edit_info .btns {
+  display: flex;
+  justify-content: center;
+  column-gap: 10%;
+  width: 100%;
+}
+
+.customer .edit_info .btn_save,
+.customer .edit_info .btn_cansel {
+  padding: 0.1rem 0.2rem;
+  width: 5rem;
+}
+
+.customer .edit_info .time {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 3%;
+}
+
+.customer .edit_info .time .start,
+.customer .edit_info .time .duretion,
+.customer .edit_info .time .end {
+  justify-items: center;
+}
+
+.customer .edit_info input {
+  width: 100%;
+}
+
+
+
+
+
+/* @media screen and (max-width: 650px) {
+  nav {
+    
+  }
+} */
