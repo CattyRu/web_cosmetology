@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="scripts/appointment_page.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/counter_page.html">клиенты</a>
+        <a href="/">записи</a>
+      </nav>
+    </header>
+    <main>
+      <section class="day_navigator">
+        <button class="btn_prev_day">prev</button>
+        <button class="btn_calendar" id="date_display">Дата</button>
+        <button class="btn_next_day">next</button>
+      </section>
+      <section class="customers_viewport">
+        <ul class="customers_list">
+          <li class="customer" id="customer_1">
+            <div class="base_info">
+              <div class="btns">
+                <button class="btn_succes">Прием прошел успешно</button>
+                <button class="btn_cansel">Прием отменен</button>
+              </div>
+              <div class="time">10:00<br>12:30</div>
+              <div class="info">
+                <span class="fio">Person One Customer</span>
+                <span class="comment">artist with acne</span>
+                <span class="phone">80290001122</span>
+              </div>
+              <button class="btn_edit">Редактировать запись</button>
+            </div>
+            <div class="edit_info">
+              <div class="time">
+                <span class="start">
+                  <p>начало</p>
+                  <input type="time" value="10:00">
+                </span>
+                <span class="duration">
+                  <p>длительность</p>
+                  <input type="time" value="02:30">
+                </span>
+                <span class="end">
+                  <p>конец</p>
+                  <input type="time" value="12:30">
+                </span>
+              </div>
+              <div class="full_name">
+                <input type="text" placeholder="Поиск по ФИО" list="cutomer_names" value="Person One Customer">
+              </div>
+              <div class="commnet">
+                <input type="text" placeholder="комментарий к приему" value="want to do a facial cleansing">
+              </div>
+              <div class="btns">
+                <button class="btn_save">save</button>
+                <button class="btn_cansel">cancel</button>
+              </div>
+            </div>
+          </li>
+          <li class="customer" id="customer_1">
+            <div class="base_info">
+              <div class="btns">
+                <button class="btn_succes">Прием прошел успешно</button>
+                <button class="btn_cansel">Прием отменен</button>
+              </div>
+              <div class="time">10:00<br>12:30</div>
+              <div class="info">
+                <span class="fio">Person One Customer</span>
+                <span class="comment">artist with acne</span>
+                <span class="phone">80290001122</span>
+              </div>
+              <button class="btn_edit">Редактировать запись</button>
+            </div>
+            <div class="edit_info">
+              <div class="time">
+                <span class="start">
+                  <p>начало</p>
+                  <input type="time" value="10:00">
+                </span>
+                <span class="duration">
+                  <p>длительность</p>
+                  <input type="time" value="02:30">
+                </span>
+                <span class="end">
+                  <p>конец</p>
+                  <input type="time" value="12:30">
+                </span>
+              </div>
+              <div class="full_name">
+                <input type="text" placeholder="Поиск по ФИО" list="cutomer_names" value="Person One Customer">
+              </div>
+              <div class="commnet">
+                <input type="text" placeholder="комментарий к приему" value="want to do a facial cleansing">
+              </div>
+              <div class="btns">
+                <button class="btn_save">save</button>
+                <button class="btn_cansel">cancel</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <button class="btn_add">Добавить запись</button>
+      </section>
+    </main>
+    <datalist id="cutomer_names">
+      <option value="Person One Customer"></option>
+      <option value="Person Two Customer"></option>
+    </datalist>
+  </body>
+</html>
